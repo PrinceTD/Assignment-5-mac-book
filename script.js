@@ -57,7 +57,7 @@ function discountBtn() {
     let discount = discountInput.value;
     let totaldiscount = parseInt(totalPrice.innerText);
     if (discount === "stevekaku") {
-        let newTotal =20% totaldiscount;
+        let newTotal = totaldiscount - (totaldiscount * 0.2);
         footerTotalPrice.innerText = newTotal;
     }
     else {
